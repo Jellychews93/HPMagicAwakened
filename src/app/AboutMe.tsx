@@ -25,7 +25,7 @@ const AboutMe = () => {
       </Grid>
       <Grid item xs={4} sx={{}}>
         <Typography variant='h3' sx={{ textAlign: 'center' }}>
-          Hi! I'm Jellychews
+          Hi! I&apos;m Jellychews
         </Typography>
         <Typography variant='h5' sx={{ textAlign: 'center', mt: '1vh' }}>
           I&apos;m a 1v1 Magic Awakened player in North America and saw that there was a severe lack of resources for this game.
