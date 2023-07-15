@@ -3,6 +3,8 @@ import { useState } from 'react';
 import Forest from './NavbarDropdowns/Forest';
 import logo from '../../public/assets/logo.png'
 import { Breadcrumbs, Link, Typography } from '@mui/material';
+import Shop from './NavbarDropdowns/Shop';
+import SchoolLife from './NavbarDropdowns/SchoolLife';
 
 const Navbar = () => {
   return (
@@ -15,12 +17,18 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center md:ml-6">
-                <div className='mx-3'>
+              <div className='mx-3'>
                   <Forest />
+                </div>
+              <div className='mx-3'>
+                  <SchoolLife />
+                </div>
+                <div className='mx-3'>
+                  <Shop />
                 </div>
                 <div className='mx-3'>
                   <a
-                    href='/'
+                    href='/FAQ'
                     className="flex text-sm rounded-m focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                     style={{ color: '#EDC865' }}
                   >

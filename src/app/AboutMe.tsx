@@ -36,6 +36,8 @@ const AboutMe = () => {
           <br />
           Copyright: If I've used any content or assets that you'd prefer I didn't and/or haven't given any proper cites, please let me know and I will take it down immediately.
           Jellychews93@gmail.com
+          <br />
+          If you're interested in contributing as a developer or have content you have to add or edit, feel free to email me as well or make some pull requests on the github <a href="github.com/jellychews/hpmagicawakened" style={{ textDecoration: 'underline' }}>here</a>.
         </Typography>
       </Grid>
       <Grid item xs={2} sx={{}} />

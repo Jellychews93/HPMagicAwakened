@@ -7,77 +7,25 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Box, Grid, Typography } from '@mui/material';
 import Footer from '@/components/Footer'
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#00a99d',
-      light: '#f2f2f2',
-      dark: '#eeeeee',
-    },
-    secondary: {
-      main: '#00a99d',
-    },
-  },
-  typography: {
-    fontFamily: 'Roboto',
-    h1: {
-      color: '#EDC865',
-      fontSize: '4rem',
-      '@media (max-width: 768px)': {
-        fontSize: '10vw',
-      },
-    },
-    h2: {
-      fontSize: '3.25rem',
-      color: '#EDC865',
-    },
-    h3: {
-      fontSize: '2.5rem',
-      color: '#EDC865',
-    },
-    h4: {
-      fontSize: '1.75rem',
-      color: '#EDC865',
-    },
-    h5: {
-      fontSize: '1rem',
-      color: '#EDC865',
-    },
-    h6: {
-      color: '#EDC865',
-      fontSize: '0.75rem',
-      '@media (max-width: 768px)': {
-        fontSize: '0.75rem',
-      },
-    },
-    body1: {
-      color: '#777777',
-      fontSize: '1rem',
-    },
-  },
-});
-
 export default function Home() {
   return (
-    <ThemeProvider theme={theme}>
-      <div className='backgroundImage'>
-        <Navbar />
-        <Grid container>
-          <Grid item xs={1} />
-          <Grid item xs={10}>
-            <Typography variant='h6'>
-              Official Website: <a href="https://www.magicawakened.com/en">https://www.magicawakened.com/en</a>
-            </Typography>
-            <Typography variant='h1' sx={{ textAlign: 'center', mt: '2vh', textDecoration: 'underline' }}>
-              Harry Potter Magic Awakened Guide
-            </Typography>
-          </Grid>
-          <Grid item xs={1} />
+    <div>
+      <Navbar />
+      <Grid container>
+        <Grid item xs={1} />
+        <Grid item xs={10}>
+          <Typography variant='h6'>
+            Official Website: <a href="https://www.magicawakened.com/en">https://www.magicawakened.com/en</a>
+          </Typography>
+          <Typography variant='h1' sx={{ textAlign: 'center', mt: '2vh', textDecoration: 'underline' }}>
+            Harry Potter Magic Awakened Guide
+          </Typography>
         </Grid>
-        <AboutMe />
-        <WhatIsHPMA />
-        <Footer />
-      </div>
-    </ThemeProvider >
+        <Grid item xs={1} />
+      </Grid>
+      <AboutMe />
+      <WhatIsHPMA />
+      <Footer />
+    </div>
   )
 }

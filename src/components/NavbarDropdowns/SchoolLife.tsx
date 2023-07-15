@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect, useRef } from 'react';
 
-function Forest() {
+function SchoolLife() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -30,7 +30,7 @@ function Forest() {
         className="flex text-sm rounded-m focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
         style={{ color: '#EDC865' }}
       >
-        Forbidden Forest
+        School Life
         <svg
           className={`ml-2 h-5 w-5 ${dropdownOpen ? '' : 'rotate-180'}`}
           xmlns="http://www.w3.org/2000/svg"
@@ -48,30 +48,53 @@ function Forest() {
       {dropdownOpen && (
         <div className="origin-top-right absolute right-0 mt-2 w-auto rounded-md shadow-lg ring-1 ring-black ring-opacity-5" style={{ backgroundColor: '#EDC865' }}>
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-            <a
-              href="ForbiddenForestSolo"
+          <a
+              href="/Acheivements"
               className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               style={{ color: '#0d0604' }}
               role="menuitem"
             >
-              Solo
+              Acheivements
             </a>
             <a
-              href="ForbiddenForestHauntedHallow"
+              href="/Classes"
               className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               style={{ color: '#0d0604' }}
               role="menuitem"
             >
-              Haunted Hallow
+              Classes
             </a>
             <a
-              href="ForbiddenForestHauntedHallow"
-              // href="ForbiddenForestDeathlyDell"
+              href="/ExamWeek"
               className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               style={{ color: '#0d0604' }}
               role="menuitem"
             >
-              Deathly Dell
+              Exam Week
+            </a>
+            <a
+              href="/SocialClub"
+              className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
+              style={{ color: '#0d0604' }}
+              role="menuitem"
+            >
+              Social Club
+            </a>
+            <a
+              href="/Dance"
+              className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
+              style={{ color: '#0d0604' }}
+              role="menuitem"
+            >
+              Dance
+            </a>
+            <a
+              href="/Duel"
+              className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
+              style={{ color: '#0d0604' }}
+              role="menuitem"
+            >
+              Duel
             </a>
           </div>
         </div>
@@ -80,4 +103,4 @@ function Forest() {
   );
 }
 
-export default Forest;
+export default SchoolLife;
