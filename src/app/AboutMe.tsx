@@ -4,6 +4,7 @@ import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Image from 'next/image';
 
 const AboutMe = () => {
   const theme = useTheme();
@@ -13,7 +14,7 @@ const AboutMe = () => {
     <Grid container alignItems="center" spacing={2} sx={{ mt: 5 }}>
       <Grid item xs={2} sx={{}} />
       <Grid item xs={4} sx={{}}>
-        <img src={profile.src} alt="Profile Picture"
+        <Image src={profile.src} alt="Profile Picture"
           style={{
             border: '2px solid #000',
             borderRadius: '25%',

@@ -72,7 +72,7 @@ export default function Answers() {
       <CustomTabPanel value={value} index={0}>
         <span style={{ fontSize: '1.75rem', color: '#EDC865', }}>
           You sure you want the answers? Maybe you should go study instead...<br />
-          If you don't want to study.. click the next tab
+          If you dont want to study.. click the next tab
         </span>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>

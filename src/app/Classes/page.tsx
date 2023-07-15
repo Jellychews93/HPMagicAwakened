@@ -7,6 +7,7 @@ import classAccess from '../../../public/assets/Class/ClassAccess.jpg'
 import inviteFriends from '../../../public/assets/Class/InviteFriends.jpg'
 import Answers from './Answers'
 import { hogwartsClasses } from './ClassesObject'
+import Image from 'next/image'
 
 const theme = createTheme({
   palette: {
@@ -72,12 +73,12 @@ function Page() {
           You can also invite your companions like Cassandra to join you in your classes.
         </Typography>
         <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', mb: '10vh' }}>
-          <img
+          <Image
             src={classAccess.src}
             alt="Class access"
             style={{ maxWidth: '100%', maxHeight: '800px', height: 'auto' }}
           />
-          <img
+          <Image
             src={inviteFriends.src}
             alt="Class access"
             style={{ maxWidth: '100%', maxHeight: '800px', height: 'auto' }}
@@ -109,7 +110,7 @@ function Page() {
               textAlign: 'center',
               mb: '10vh'
             }}>
-            <img
+            <Image
               src={typeof item.src === 'string' ? item.src : item.src.src}
               alt={item.name}
               style={{ width: '40%', maxHeight: '600px', height: 'auto', display: 'flex', marginInline: 'auto' }}

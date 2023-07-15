@@ -4,6 +4,7 @@ import { Box, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import HPMA from '../../public/assets/HPMA.jpg'
+import Image from 'next/image';
 
 const WhatIsHPMA = () => {
   const theme = useTheme();
@@ -16,7 +17,7 @@ const WhatIsHPMA = () => {
         <Typography variant='h1' sx={{ textAlign: 'center', mb: '3vh' }}>
           What Is Harry Potter Magic Awakened?
         </Typography>
-        <img src={HPMA.src} alt="HPMA Photo"
+        <Image src={HPMA.src} alt="HPMA Photo"
           style={{
             width: '50vw',
             marginInline: 'auto',
