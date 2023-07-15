@@ -15,6 +15,7 @@ const AboutMe = () => {
       <Grid item xs={2} sx={{}} />
       <Grid item xs={4} sx={{}}>
         <Image src={profile.src} alt="Profile Picture"
+          width={300} height={300}
           style={{
             border: '2px solid #000',
             borderRadius: '25%',

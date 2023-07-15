@@ -73,12 +73,12 @@ function Page() {
           You can also invite your companions like Cassandra to join you in your classes.
         </Typography>
         <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', mb: '10vh' }}>
-          <Image
+          <Image width={300} height={300}
             src={classAccess.src}
             alt="Class access"
             style={{ maxWidth: '100%', maxHeight: '800px', height: 'auto' }}
           />
-          <Image
+          <Image width={300} height={300}
             src={inviteFriends.src}
             alt="Class access"
             style={{ maxWidth: '100%', maxHeight: '800px', height: 'auto' }}
@@ -110,7 +110,7 @@ function Page() {
               textAlign: 'center',
               mb: '10vh'
             }}>
-            <Image
+            <Image width={300} height={300}
               src={typeof item.src === 'string' ? item.src : item.src.src}
               alt={item.name}
               style={{ width: '40%', maxHeight: '600px', height: 'auto', display: 'flex', marginInline: 'auto' }}

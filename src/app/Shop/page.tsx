@@ -69,7 +69,7 @@ function page() {
           return (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Typography variant='h4' sx={{ mb: '3vh' }}>{item.name}</Typography>
-              <Image
+              <Image width={300} height={300}
                 src={item.src.src}
                 alt={item.name}
                 style={{ width: '100%', height: 'auto' }}

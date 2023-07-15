@@ -18,6 +18,7 @@ const WhatIsHPMA = () => {
           What Is Harry Potter Magic Awakened?
         </Typography>
         <Image src={HPMA.src} alt="HPMA Photo"
+        width={300} height={300}
           style={{
             width: '50vw',
             marginInline: 'auto',
