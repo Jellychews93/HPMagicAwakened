@@ -53,42 +53,35 @@ export default function Footer() {
       <Grid container spacing={1} sx={{ backgroundColor: 'primary.main', px: '5vw' }}>
         <Grid item xs={12} md={3} >
           <Box>
-            {/* <img src={logo} alt='logo' style={{ height: '5vh', backgroundColor: 'rgba(0,0,0,0.25)', borderRadius: '50%', }} /> */}
             <Typography variant='h4' sx={menuTitles}>
-              TD Therapy Alliance
+              WIP
             </Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={3} sx={menuText}>
           <Typography variant='h4' sx={menuTitles}>
-            Menu
+            WIP
           </Typography>
         </Grid>
         <Grid item xs={12} md={3}>
           <Typography variant='h4' sx={menuTitles}>
-            Hours
+            WIP
           </Typography>
           <Typography variant='body1' sx={menuText}>
-            Monday: 9-5 PM <br />
-            Tuesday: 9-5 PM <br />
-            Wednesday: 9-5 PM <br />
-            Thursday: 9-5 PM <br />
-            Friday: 9-5 PM <br />
-            Saturday: Closed <br />
-            Sunday: Closed <br />
+            WIP
           </Typography>
         </Grid>
         <Grid item xs={12} md={3}>
           <Typography variant='h4' sx={menuTitles}>
-            Social Media
+            WIP
           </Typography>
           <Box sx={{ mb: '5vh', textAlign: 'center', }}>
           </Box>
         </Grid>
       </Grid>
-      <Box sx={{ backgroundColor: '#008e82', minHeight: '5vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap' }}>
-        <Typography variant='body1' sx={{ color: '#eeeeee' }}>
-          ©2023 John Nam. All Rights Reserved.
+      <Box sx={{ backgroundColor: '#EDC865', minHeight: '5vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap' }}>
+        <Typography variant='body1' sx={{ color: '#0d0604' }}>
+          ©2023 Jellychews. All Rights Reserved.
         </Typography>
       </Box>
     </Box>
