@@ -1,7 +1,6 @@
 'use client'
-import profile from '../../public/assets/aboutMe/profile.png'
+import profile from '../../public/assets/aboutMe/Profile.png'
 import React from 'react';
-import frame from '../../public/assets/aboutMe/gallery-frame.svg';
 import { Box, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
