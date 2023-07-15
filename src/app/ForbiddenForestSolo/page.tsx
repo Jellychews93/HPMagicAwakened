@@ -64,7 +64,7 @@ function page() {
       </Typography>
       <Typography variant='h4' sx={{ textAlign: 'center', mx: '5vw', mb: '3vh' }}>
         <span style={{ textDecoration: 'underline' }}>Harry Potter Magic Awakened Central</span> on Youtube does an awesome series on how to do the forest solos. It is extra great because they do
-        do a lot of it underleveled. I highly recommend you check out their <a href="https://www.youtube.com/@HarryPotterMACentral/featured" style={{ textDecoration: 'underline' }}>channel!</a> I wasn't able to find any solo run guides below 12 so thats where this page will start.
+        do a lot of it underleveled. I highly recommend you check out their <a href="https://www.youtube.com/@HarryPotterMACentral/featured" style={{ textDecoration: 'underline' }}>channel!</a> I was not able to find any solo run guides below 12 so thats where this page will start.
       </Typography>
       <Box p={3}>
         <Grid container spacing={2}>

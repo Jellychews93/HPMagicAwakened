@@ -5,6 +5,7 @@ import logo from '../../public/assets/logo.png'
 import { Breadcrumbs, Link, Typography } from '@mui/material';
 import Shop from './NavbarDropdowns/Shop';
 import SchoolLife from './NavbarDropdowns/SchoolLife';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
@@ -13,7 +14,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
-              <a href="/"><img className="h-8 w-auto" src={logo.src} alt="Logo" /></a>
+              <a href="/"><Image className="h-8 w-auto" src={logo.src} alt="Logo" /></a>
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center md:ml-6">
