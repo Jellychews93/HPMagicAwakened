@@ -10,7 +10,7 @@ export const hogwartsClasses = [
     description:
       "Charms is a combat track where you'll face a troll in the bathroom. You'll use Wingardium Leviosa to keep the troll's club at bay while reducing its health. Perfecting the spellcasting is required to progress in the class.",
     explanation: 'test',
-    src: 'n/a',
+    src: DADA,
   },
   {
     id: 'careOfMagicalCreatures',
@@ -19,7 +19,7 @@ export const hogwartsClasses = [
     description:
       'Care of Magical Creatures offers two courses: Gnomes and Hippogriffs. In Gnomes class, you defend pumpkins from gnome incursion. In Hippogriff class, you interact with a Hippogriff while battling smaller Hippogriffs.',
     explanation: 'test',
-    src: 'n/a',
+    src: DADA,
   },
   {
     id: 'divination',
@@ -46,7 +46,7 @@ export const hogwartsClasses = [
     description:
       'Study of Ancient Runes involves a memory match game with runes. You will compete against the Frey twins and aim to match the runes correctly.',
     explanation: 'test',
-    src: 'n/a',
+    src: DADA,
   },
   {
     id: 'muggleStudies',
@@ -64,7 +64,7 @@ export const hogwartsClasses = [
     description:
       'History of Magic is a test-based class with questions related to the Potterverse. There are two levels of difficulty, and you compete with two other players to answer the questions correctly.',
     explanation: 'test',
-    src: 'n/a',
+    src: DADA,
   },
 ];
 

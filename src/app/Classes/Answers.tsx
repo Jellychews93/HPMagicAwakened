@@ -70,24 +70,24 @@ export default function Answers() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <Typography variant='h4'>
+        <span style={{ fontSize: '1.75rem', color: '#EDC865', }}>
           You sure you want the answers? Maybe you should go study instead...<br />
           If you don't want to study.. click the next tab
-        </Typography>
+        </span>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         {muggleStudiesQuestions.map((item, index) => (
           <Box key={index} sx={{ mb: '2vh' }}>
-            <Typography variant="h4">{item.question}</Typography>
-            <Typography variant="h4" sx={{ color: '#dddddd' }}>{item.answer}</Typography>
+            <span style={{ fontSize: '1.75rem', color: '#EDC865', }}>{item.question}</span><br />
+            <span style={{ fontSize: '1.75rem', color: '#dddddd', }}>{item.answer}</span>
           </Box>
         ))}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
         {historyOfMagicQuestions.map((item, index) => (
           <Box key={index} sx={{ mb: '2vh' }}>
-            <Typography variant="h4">{item.question}</Typography>
-            <Typography variant="h4" sx={{ color: '#dddddd' }}>{item.answer}</Typography>
+            <span style={{ fontSize: '1.75rem', color: '#EDC865', }}>{item.question}</span><br />
+            <span style={{ fontSize: '1.75rem', color: '#dddddd', }}>{item.answer}</span>
           </Box>
         ))}
       </CustomTabPanel>

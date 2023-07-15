@@ -68,7 +68,7 @@ function Page() {
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mx: '5vw', textAlign: 'center' }}>
         <Typography variant='h4' sx={{ mb: '3vh' }}>
           Classes are a fun way to play with your friends. There are a total of seven different classes available.
-          You can access them on this screen (first image). In the second image, you use the plus sign to invite your friends.
+          You can access them on this screen in the first image. In the second image, you use the plus sign to invite your friends.
           You can also invite your companions like Cassandra to join you in your classes.
         </Typography>
         <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', mb: '10vh' }}>
