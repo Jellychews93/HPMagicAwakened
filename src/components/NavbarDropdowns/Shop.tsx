@@ -46,7 +46,7 @@ function Shop() {
         </svg>
       </button>
       {dropdownOpen && (
-        <div className="origin-top-right absolute right-0 mt-2 w-auto rounded-md shadow-lg ring-1 ring-black ring-opacity-5" style={{ backgroundColor: '#EDC865' }}>
+        <div className="origin-top-right absolute right-0 mt-2 w-auto rounded-md shadow-lg ring-1 ring-black ring-opacity-5" style={{ backgroundColor: '#EDC865', zIndex: '3' }}>
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             <a
               href="/Shop"

@@ -13,22 +13,33 @@ const AboutMe = () => {
   return (
     <Grid container alignItems="center" spacing={2} sx={{ mt: 5 }}>
       <Grid item xs={2} sx={{}} />
-      <Grid item xs={4} sx={{}}>
-        <Image src={profile.src} alt="Profile Picture"
-          width={300} height={300}
-          style={{
-            border: '2px solid #000',
-            borderRadius: '25%',
-            width: '75%',
-            marginInline: 'auto',
+      <Grid item xs={isMobile ? 12 : 4} sx={{}}> {/* Updated xs value */}
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            mb: isMobile ? 2 : 0, // Added margin bottom for spacing on mobile
           }}
-        />
+        >
+          <Image
+            src={profile.src}
+            alt="Profile Picture"
+            width={300}
+            height={300}
+            style={{
+              border: '2px solid #000',
+              borderRadius: '25%',
+              width: '75%',
+              marginInline: 'auto',
+            }}
+          />
+        </Box>
       </Grid>
-      <Grid item xs={4} sx={{}}>
-        <Typography variant='h3' sx={{ textAlign: 'center' }}>
+      <Grid item xs={isMobile ? 12 : 4} sx={{ mx: '2vw' }}>
+        <Typography variant="h3" sx={{ textAlign: 'center' }}>
           Hi! I&apos;m Jellychews
         </Typography>
-        <Typography variant='h5' sx={{ textAlign: 'center', mt: '1vh' }}>
+        <Typography variant="h5" sx={{ textAlign: 'center', mt: '1vh' }}>
           I&apos;m a 1v1 Magic Awakened player in North America and saw that there was a severe lack of resources for this game.
           <br />
           I am going to try to use this website as a tool for my club as a guide of sorts. I am by no means a pro player or anything but I seem to have some answers for a lot of my club mates&apos; questions.
@@ -42,7 +53,7 @@ const AboutMe = () => {
         </Typography>
       </Grid>
       <Grid item xs={2} sx={{}} />
-    </Grid >
+    </Grid>
   );
 };
 

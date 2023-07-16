@@ -13,6 +13,7 @@ import { Breadcrumbs, Link, Typography } from '@mui/material';
 import Shop from './NavbarDropdowns/Shop';
 import SchoolLife from './NavbarDropdowns/SchoolLife';
 import Image from 'next/image';
+import Dueling from './NavbarDropdowns/Dueling';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -45,6 +46,9 @@ const Navbar = () => {
             <div className={`md:hidden ${showNavbar ? 'block' : 'hidden'}`}>
               <div className="mt-2 py-2 px-4 bg-black shadow rounded translate-y-10">
                 <div className='mx-3'>
+                  <Dueling />
+                </div>
+                <div className='mx-3'>
                   <Forest />
                 </div>
                 <div className='mx-3'>
@@ -66,6 +70,9 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center md:ml-6">
+                <div className='mx-3'>
+                  <Dueling />
+                </div>
                 <div className='mx-3'>
                   <Forest />
                 </div>
