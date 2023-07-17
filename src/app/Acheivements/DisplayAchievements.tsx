@@ -14,7 +14,7 @@ function DisplayAchievements({ achievements }: DisplayAchievementsProps) {
     <Grid container spacing={4}>
       {achievements.map((item, index) => (
         <Grid item xs={4} key={index}>
-          <Box sx={{ mx: '3vw' }}>
+          <Box key={index} sx={{ mx: '3vw' }}>
             <Typography variant='h3'>{item.title}</Typography>
             <Typography variant='h4' style={{ overflowWrap: 'break-word' }}>{item.requirement}</Typography>
           </Box>
