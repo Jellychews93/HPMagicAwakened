@@ -76,17 +76,17 @@ export default function AchievementTabs() {
       </Box>
       <CustomTabPanel value={value} index={0}>
         {duelingAchievements.map((item, index) => (
-          <DisplayAchievements achievements={duelingAchievements} />
+          <DisplayAchievements key={index} achievements={duelingAchievements} />
         ))}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         {duelingAchievements.map((item, index) => (
-          <DisplayAchievements achievements={duelingAchievements} />
+          <DisplayAchievements key={index} achievements={duelingAchievements} />
         ))}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
         {duelingAchievements.map((item, index) => (
-          <DisplayAchievements achievements={duelingAchievements} />
+          <DisplayAchievements key={index} achievements={duelingAchievements} />
         ))}
       </CustomTabPanel>
     </Box>
