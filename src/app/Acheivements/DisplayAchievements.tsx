@@ -16,7 +16,7 @@ function DisplayAchievements({ achievements }: DisplayAchievementsProps) {
         <Grid item xs={4} key={index}>
           <Box key={index} sx={{ mx: '3vw' }}>
             <Typography variant='h3'>{item.title}</Typography>
-            <Typography variant='h4' style={{ overflowWrap: 'break-word' }}>{item.requirement}</Typography>
+            <Typography variant='h4' style={{ overflowWrap: 'break-word', color: '#dddddd' }}>{item.requirement}</Typography>
           </Box>
         </Grid>
       ))}

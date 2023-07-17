@@ -4,6 +4,7 @@ interface Card {
   name: string;
   type: string;
   description: string;
+  guide: string;
 }
 
 interface DisplayCardsProps {
@@ -16,8 +17,9 @@ function DisplayCards({ cards }: DisplayCardsProps) {
       {cards.map((item, index) => (
         <Grid item xs={4} key={index}>
           <Box sx={{ mx: '3vw' }}>
-            <Typography variant='h3'>{item.name} <span style={{ color: '#dddddd', fontSize: '1.75rem' }}>({item.type})</span></Typography>
-            <Typography variant='h4' style={{ overflowWrap: 'break-word' }}>{item.description}</Typography>
+            <Typography variant='h4'>{item.name} <span style={{ color: '#dddddd' }}>({item.type})</span></Typography>
+            <Typography variant='h5' sx={{ overflowWrap: 'break-word', color: '#dddddd', my: '2vh' }}>{item.description}</Typography>
+            <Typography variant='h5' sx={{ overflowWrap: 'break-word', }}>{item.guide}</Typography>
           </Box>
         </Grid>
       ))}
