@@ -49,6 +49,14 @@ function Dueling() {
         <div className="origin-top-right absolute right-0 mt-2 w-auto rounded-md shadow-lg ring-1 ring-black ring-opacity-5" style={{ backgroundColor: '#EDC865', zIndex: '3' }}>
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             <a
+              href="DuelingClub"
+              className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
+              style={{ color: '#0d0604' }}
+              role="menuitem"
+            >
+              Dueling Club
+            </a>
+            <a
               href="Counters"
               className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               style={{ color: '#0d0604' }}
@@ -66,7 +74,6 @@ function Dueling() {
             </a>
             <a
               href="2v2"
-              // href="ForbiddenForestDeathlyDell"
               className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               style={{ color: '#0d0604' }}
               role="menuitem"

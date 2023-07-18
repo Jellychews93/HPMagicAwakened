@@ -49,7 +49,8 @@ const AboutMe = () => {
           Copyright: If I&apos;ve used any content or assets that you&apos;d prefer I didn&apos;t and/or haven&apos;t given any proper citations, please let me know and I will take it down immediately.
           Jellychews93@gmail.com
           <br />
-          If you&apos;re interested in contributing as a developer or have content you have to add or edit, feel free to email me as well.
+          If you&apos;re interested in contributing as a developer or have content you have to add or edit, feel free to email me as well. I could 
+          definitely use the help!
         </Typography>
       </Grid>
       <Grid item xs={2} sx={{}} />

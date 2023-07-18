@@ -52,20 +52,20 @@ export default function Answers() {
       <Box sx={{ borderBottom: '1px solid #EDC865', display: 'inline-block' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" sx={{
           '& .MuiTabs-indicator': {
-            backgroundColor: '#EDC865',
+            backgroundColor: '#EDC865', wordWrap: 'break-word'
           },
         }}>
           <Tab label="You sure??" {...a11yProps(0)} sx={{
             color: '#EDC865',
-            '&.Mui-selected': { color: '#dddddd', },
+            '&.Mui-selected': { color: '#dddddd' },
           }} />
-          <Tab label="Muggles Studies Answers" {...a11yProps(1)} sx={{
+          <Tab label="Muggles Studies" {...a11yProps(1)} sx={{
             color: '#EDC865',
-            '&.Mui-selected': { color: '#dddddd', },
+            '&.Mui-selected': { color: '#dddddd' },
           }} />
-          <Tab label="History of Magic Answers" {...a11yProps(2)} sx={{
+          <Tab label="History of Magic" {...a11yProps(2)} sx={{
             color: '#EDC865',
-            '&.Mui-selected': { color: '#dddddd', },
+            '&.Mui-selected': { color: '#dddddd' },
           }} />
         </Tabs>
       </Box>
