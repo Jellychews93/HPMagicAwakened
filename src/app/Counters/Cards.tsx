@@ -69,6 +69,7 @@ export const commonCards = [
     name: 'Spiders', type: 'Summon',
     description: 'Spiders are ubiquitous at Hogwarts. Use this Card to Summon a cluster of Spiderlings to attack enemy units.',
     guide: 'Need someone to write this',
+    answeredBy: 'Jellychews',
   }
 ];
 
@@ -374,6 +375,7 @@ export const epicCards = [
     name: "Rubeus Hagrid", type: "Companion",
     description: 'Hagrid picks you up on his motorbike. Afterwards, you can direct the motorbike to crash into targets. Hagrid got his infamous flying motorbike from Sirius Black and used it to deliver one-year-old Harry Potter to Privet Drive.',
     guide: 'Need someone to write this',
+    answeredBy: 'Jellychews',
   }
 ];
 
