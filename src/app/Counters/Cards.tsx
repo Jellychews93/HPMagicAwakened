@@ -32,8 +32,8 @@ export const commonCards = [
   {
     name: 'Portkey', type: 'Spell',
     description: 'Summons a Portkey. For 10 seconds, units that touch the Portkey will be teleported. Friendly units gain a Shield after they teleport, while enemy units take damage after they teleport.',
-    guide: 'Need someone to write this',
-    answeredBy: 'Jellychews',
+    guide: 'Portkey will place any summon on the enemys side, even if they normally cant be placed there. This also works for Cassandra. Have not tried for Whomping Willow but might be the same.    ',
+    answeredBy: 'Linguz',
   },
   {
     name: 'Protego Totalum', type: 'Spell',
@@ -218,8 +218,8 @@ export const epicCards = [
   {
     name: "Bludger", type: "Spell",
     description: 'The Bludgers sole purpose is to knock a player off their Broomstick. Hitting the Bludger will deal damage to all enemy units in its path, you can also move to catch it and hit it again.',
-    guide: 'Bludger can do decent damage if not dealt with. I like to use inflatus or expulso to knock the opponent out of the path so they miss the bludger.',
-    answeredBy: 'Jellychews',
+    guide: 'Bludger can do decent damage if not dealt with. I like to use inflatus or expulso to knock the opponent out of the path so they miss the bludger. You can hide from Bludger in Nebulous and it will target a random location. Good for forcing the enemy to either abandon Bludger or lose movement cards while you are standing still',
+    answeredBy: 'Linguz',
   },
   {
     name: "Confringo", type: "Spell",
@@ -446,8 +446,8 @@ export const darkCards = [
   {
     name: "Avada Kedavra", type: "Spell",
     description: 'The Killing Curse (Avada Kedavra) is the most vicious one among the three Unforgivable Curses. Each enemy unit destroyed will add additional damage to the next cast. It will directly destroy any enemy unit hit after using it to destroy 4 enemy units.',
-    guide: 'This is a pretty awesome spell gameplay wise. It does a lot of damage but will NOT kill your opponent until you kill 4 other units first. Then on the 5th cast on, it will insta kill your opponent. It is a high skill ceiling spell and can be dodged if the user is not good enough or doesnt pair it with something like inflatus.',
-    answeredBy: 'Jellychews',
+    guide: 'This is a pretty awesome spell gameplay wise. It does a lot of damage but will NOT kill your opponent until you kill 4 other units first. Then on the 5th cast on, it will insta kill your opponent. It is a high skill ceiling spell and can be dodged if the user is not good enough or doesnt pair it with something like inflatus. If cast by Hermoine, she will target the closest enemy with it. If she gets a kill, it counts towards the four you need.',
+    answeredBy: 'Linguz',
   },
   {
     name: "Crucio", type: "Spell",

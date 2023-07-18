@@ -1,11 +1,9 @@
 'use client'
 import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
+import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import { duelingAchievements } from './Achievements'
-import { Grid } from '@mui/material';
+import { Box, Grid, Paper, Typography, useMediaQuery } from '@mui/material';
 import DisplayAchievements from './DisplayAchievements';
 
 interface TabPanelProps {
@@ -42,6 +40,7 @@ function a11yProps(index: number) {
 }
 
 export default function AchievementTabs() {
+  const isMobile = useMediaQuery('(max-width:768px)');
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -50,12 +49,25 @@ export default function AchievementTabs() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: '1px solid #EDC865', display: 'inline-block' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" sx={{
-          '& .MuiTabs-indicator': {
-            backgroundColor: '#EDC865',
-          },
-        }}>
+      <Box sx={{
+        borderBottom: '1px solid #EDC865', display: 'inline-block', flexGrow: 1,
+        maxWidth: { xs: 320, sm: 480, md: 780, lg: 1000, },
+      }}>
+        <Tabs value={value}
+          onChange={handleChange}
+          variant="scrollable"
+          scrollButtons
+          allowScrollButtonsMobile
+          aria-label="scrollable auto tabs example"
+          sx={{
+            '& .MuiTabs-indicator': {
+              backgroundColor: '#EDC865',
+            },
+            [`& .${tabsClasses.scrollButtons}`]: {
+              '&.Mui-disabled': { opacity: 0.3 },
+              color: '#EDC865',
+            },
+          }}>
           <Tab label="Dueling Achievements" {...a11yProps(0)} sx={{
             color: '#EDC865',
             '&.Mui-selected': { color: '#dddddd', },
@@ -68,7 +80,7 @@ export default function AchievementTabs() {
             color: '#EDC865',
             '&.Mui-selected': { color: '#dddddd', },
           }} />
-          <Tab label="Dueling Achievements" {...a11yProps(2)} sx={{
+          <Tab label="Dueling Achievements" {...a11yProps(3)} sx={{
             color: '#EDC865',
             '&.Mui-selected': { color: '#dddddd', },
           }} />
@@ -85,6 +97,11 @@ export default function AchievementTabs() {
         ))}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
+        {duelingAchievements.map((item, index) => (
+          <DisplayAchievements key={index} achievements={duelingAchievements} />
+        ))}
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={3}>
         {duelingAchievements.map((item, index) => (
           <DisplayAchievements key={index} achievements={duelingAchievements} />
         ))}

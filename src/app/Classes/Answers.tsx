@@ -1,6 +1,6 @@
 'use client'
 import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
+import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -50,11 +50,21 @@ export default function Answers() {
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: '1px solid #EDC865', display: 'inline-block' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" sx={{
-          '& .MuiTabs-indicator': {
-            backgroundColor: '#EDC865', wordWrap: 'break-word'
-          },
-        }}>
+        <Tabs value={value}
+          onChange={handleChange}
+          variant="scrollable"
+          scrollButtons
+          allowScrollButtonsMobile
+          aria-label="scrollable auto tabs example"
+          sx={{
+            '& .MuiTabs-indicator': {
+              backgroundColor: '#EDC865',
+            },
+            [`& .${tabsClasses.scrollButtons}`]: {
+              '&.Mui-disabled': { opacity: 0.3 },
+              color: '#EDC865',
+            },
+          }}>
           <Tab label="You sure??" {...a11yProps(0)} sx={{
             color: '#EDC865',
             '&.Mui-selected': { color: '#dddddd' },
@@ -72,7 +82,7 @@ export default function Answers() {
       <CustomTabPanel value={value} index={0}>
         <span style={{ fontSize: '1.75rem', color: '#EDC865', }}>
           You sure you want the answers? Maybe you should go study instead...<br />
-          If you dont want to study.. click the next tab
+          Too lazy to study? Click the next tab!
         </span>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>

@@ -1,6 +1,6 @@
 'use client'
 import Navbar from '@/components/Navbar'
-import { Grid, Typography } from '@mui/material'
+import { Box, Grid, Paper, Typography, useMediaQuery } from '@mui/material';
 import React from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Image from 'next/image';
@@ -60,6 +60,9 @@ const theme = createTheme({
 });
 
 function page() {
+  const isMobile = useMediaQuery('(max-width:768px)');
+  const imageSize = isMobile ? '300' : '400'
+
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
@@ -72,10 +75,10 @@ function page() {
       <Typography variant='h4' sx={{ textAlign: 'center', mx: '5vw', mb: '3vh' }}>
         The Dueling Club is HPMA versions of PVP. You can either participate in 1v1 or 2v2.
       </Typography>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} sx={{ px: isMobile ? '10vw' : '2vw' }}>
         <Grid xs={12} md={2} />
         <Grid item xs={12} md={4}>
-          <Image width={400} height={400} src={SoloorDuo.src} alt='Solo or Duo' style={{ marginInline: 'auto' }} />
+          <Image width={imageSize} height={imageSize} src={SoloorDuo.src} alt='Solo or Duo' style={{ marginInline: 'auto', }} />
         </Grid>
         <Grid item xs={12} md={4}>
           <Typography variant='h3'>Solo or Duo</Typography>
@@ -84,7 +87,7 @@ function page() {
         <Grid xs={12} md={2} />
         <Grid xs={12} md={2} />
         <Grid item xs={12} md={4}>
-          <Image width={400} height={400} src={Ranking.src} alt='Ranking up' style={{ marginInline: 'auto' }} />
+          <Image width={imageSize} height={imageSize} src={Ranking.src} alt='Ranking up' style={{ marginInline: 'auto' }} />
         </Grid>
         <Grid item xs={12} md={4}>
           <Typography variant='h3'>Ranking Up</Typography>
@@ -107,10 +110,10 @@ function page() {
       <Grid container spacing={4}>
         <Grid xs={12} md={2} />
         <Grid item xs={12} md={4}>
-          <Image width={400} height={400} src={Selection.src} alt='Solo or Duo' style={{ marginInline: 'auto' }} />
+          <Image width={imageSize} height={imageSize} src={Selection.src} alt='Solo or Duo' style={{ marginInline: 'auto' }} />
         </Grid>
-        <Grid item xs={12} md={4}>
-          <Typography variant='h3'>Deck Selection</Typography>
+        <Grid item xs={12} md={4} sx={{ mx: isMobile ? '7vw' : '' }}>
+          <Typography variant='h3' sx={{ mb: '2vh' }}>Deck Selection</Typography>
           <Typography variant='h4'>
             In the GM Dueling Club, you are required to make 3 decks. After you match with someone, each player will ban one deck and then
             choose one from the remaining two. Theoretically, as long as you have two decks you are comfortable playing, the third wont matter since you can just choose one of the two.
