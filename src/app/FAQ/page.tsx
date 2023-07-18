@@ -4,6 +4,7 @@ import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { duelingQuestions, forestQuestions, otherQuestions, schoolLifeQuestions, currencyQuestions } from './Questions';
+import Footer from '@/components/Footer';
 
 const theme = createTheme({
   palette: {
@@ -137,6 +138,7 @@ function page() {
           ))}
         </Grid>
       </Box>
+      <Footer />
     </ThemeProvider>
 
   )

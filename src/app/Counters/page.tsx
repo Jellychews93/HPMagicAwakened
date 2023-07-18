@@ -5,6 +5,7 @@ import React from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { commonCards, rareCards, epicCards, legendaryCards, darkCards, mythicCards } from './Cards';
 import DisplayCards from './DisplayCards';
+import Footer from '@/components/Footer';
 
 const theme = createTheme({
   palette: {
@@ -103,7 +104,7 @@ function page() {
         </Typography>
         <DisplayCards cards={mythicCards} />
       </Box>
-
+      <Footer />
     </ThemeProvider>
   )
 }

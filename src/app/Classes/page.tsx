@@ -72,18 +72,24 @@ function Page() {
           You can access them on this screen in the first image. In the second image, you use the plus sign to invite your friends.
           You can also invite your companions like Cassandra to join you in your classes.
         </Typography>
-        <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', mb: '10vh' }}>
-          <Image width={300} height={300}
-            src={classAccess.src}
-            alt="Class access"
-            style={{ maxWidth: '100%', maxHeight: '800px', height: 'auto' }}
-          />
-          <Image width={300} height={300}
-            src={inviteFriends.src}
-            alt="Class access"
-            style={{ maxWidth: '100%', maxHeight: '800px', height: 'auto' }}
-          />
-        </Box>
+        <Grid container spacing={2} sx={{ mb: '3vh' }}>
+          <Grid item xs={12} md={2} />
+          <Grid item xs={12} md={4}>
+            <Image width={400} height={400}
+              src={classAccess.src}
+              alt="Class access"
+              style={{ maxWidth: '100%', maxHeight: '800px', height: 'auto', marginInline: 'auto' }}
+            />
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Image width={400} height={400}
+              src={inviteFriends.src}
+              alt="Class access"
+              style={{ maxWidth: '100%', maxHeight: '800px', height: 'auto', marginInline: 'auto' }}
+            />
+          </Grid>
+          <Grid item xs={12} md={2} />
+        </Grid>
       </Box>
 
       {/* Displaying Hogwarts Classes */}

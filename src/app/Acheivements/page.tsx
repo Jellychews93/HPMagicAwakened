@@ -6,6 +6,7 @@ import { duelingAchievements } from './Achievements'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import DisplayAchievements from './DisplayAchievements'
 import AchievementTabs from './AchievementTabs'
+import Footer from '@/components/Footer'
 
 const theme = createTheme({
   palette: {
@@ -69,7 +70,7 @@ function page() {
       <Box sx={{ textAlign: 'center', mx: 'auto', justifyContent: 'center', mt: '10vh' }}>
         <AchievementTabs />
       </Box>
-
+      <Footer />
     </ThemeProvider>
   )
 }

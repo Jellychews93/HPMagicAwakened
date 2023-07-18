@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import { Typography } from '@mui/material'
 import React from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Footer from '@/components/Footer';
 
 const theme = createTheme({
   palette: {
@@ -61,6 +62,7 @@ function page() {
       <Typography variant='h2'>
         Coming Soon!
       </Typography>
+      <Footer />
     </ThemeProvider>
   )
 }

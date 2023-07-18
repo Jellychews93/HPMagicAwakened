@@ -5,81 +5,68 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   const isMobile = useMediaQuery('(max-width:768px)');
 
-  const linkStyles = {
-    display: 'block',
-    textAlign: 'center',
-    color: '#eeeeee',
-    margin: '1vh',
-    textDecoration: 'none',
-    '&:hover': {
-      color: '#f36523',
-      scale: '1.10',
-      transition: '.5s'
-    },
-    '&:not(:hover)': {
-      transition: '.5s'
-    },
-  };
-
-  const menuTitles = {
-    mt: '4vh',
-    mb: '2vh',
-    textAlign: 'center',
-    color: '#FFFFFF',
-    textDecoration: 'underline'
-  };
-  const menuText = {
-    textAlign: 'center',
-    color: '#eeeeee',
-  };
-  const iconStyles = {
-    boxShadow: '0 0 2px rgba(0, 0, 0, 0.3)',
-    color: '#eeeeee',
-    fontSize: isMobile ? '3rem' : '2rem',
-    mr: '1vw',
-    borderRadius: '30%',
-    '&:hover': {
-      color: '#f36523',
-      scale: '1.10',
-      transition: '.5s'
-    },
-    '&:not(:hover)': {
-      transition: '.5s'
-    },
-  };
-
   return (
     <Box>
-      <Grid container spacing={1} sx={{ backgroundColor: 'primary.main', px: '5vw' }}>
-        <Grid item xs={12} md={3} >
-          <Box>
-            <Typography variant='h4' sx={menuTitles}>
-              WIP
-            </Typography>
+      <Grid container spacing={1} sx={{ backgroundColor: 'primary.main', px: '5vw', textAlign: 'center', mt: '5vh' }}>
+        <Grid item xs={12} md={1} />
+        <Grid item xs={12} md={2}>
+          <Typography variant='h4'>
+            Dueling
+          </Typography>
+          <Box sx={{ my: '1vh' }}>
+            <ul>
+              <li><a href="/Duelingclub" style={{ color: '#dddddd' }}>Dueling Club</a></li>
+              <li><a href="/Counters" style={{ color: '#dddddd' }}>Counters</a></li>
+              <li><a href="/1v1" style={{ color: '#dddddd' }}>1v1</a></li>
+              <li><a href="/2v2" style={{ color: '#dddddd' }}>2v2</a></li>
+            </ul>
           </Box>
         </Grid>
-        <Grid item xs={12} md={3} sx={menuText}>
-          <Typography variant='h4' sx={menuTitles}>
-            WIP
+        <Grid item xs={12} md={2}>
+          <Typography variant='h4'>
+            Forbidden Forest
           </Typography>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <Typography variant='h4' sx={menuTitles}>
-            WIP
-          </Typography>
-          <Typography variant='body1' sx={menuText}>
-            WIP
-          </Typography>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <Typography variant='h4' sx={menuTitles}>
-            WIP
-          </Typography>
-          <Box sx={{ mb: '5vh', textAlign: 'center', }}>
+          <Box sx={{ my: '1vh' }}>
+            <ul>
+              <li><a href="/ForbiddenForestSolo" style={{ color: '#dddddd' }}>Solo</a></li>
+              <li><a href="/ForbiddenForestHauntedHallow" style={{ color: '#dddddd' }}>Haunted Hallow</a></li>
+              <li><a href="/ForbiddenForestHauntedHallow" style={{ color: '#dddddd' }}>Deathly Dell</a></li>
+            </ul>
           </Box>
         </Grid>
+        <Grid item xs={12} md={2}>
+          <Typography variant='h4'>
+            School Life
+          </Typography>
+          <Box sx={{ my: '1vh' }}>
+            <ul>
+              <li><a href="/Achievements" style={{ color: '#dddddd' }}>Achievements</a></li>
+              <li><a href="/Classes" style={{ color: '#dddddd' }}>Classes</a></li>
+              <li><a href="/ExamWeek" style={{ color: '#dddddd' }}>Exam Week</a></li>
+              <li><a href="/SocialClub" style={{ color: '#dddddd' }}>Social Club</a></li>
+              <li><a href="/Dance" style={{ color: '#dddddd' }}>Dance</a></li>
+            </ul>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={2}>
+          <Typography variant='h4'>
+            Shop
+          </Typography>
+          <Box sx={{ my: '1vh' }}>
+            <ul>
+              <li><a href="/Shop" style={{ color: '#dddddd' }}>Shop Information</a></li>
+              <li><a href="/Currencies" style={{ color: '#dddddd' }}>Currencies</a></li>
+            </ul>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={2}>
+          <Typography variant='h4'>
+            <a href="/FAQ">FAQ</a>
+          </Typography>
+        </Grid>
+
       </Grid>
-      <Box sx={{ backgroundColor: '#EDC865', minHeight: '5vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap' }}>
+      <Box sx={{ backgroundColor: '#EDC865', minHeight: '3vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap' }}>
         <Typography variant='body1' sx={{ color: '#0d0604' }}>
           ©2023 Jellychews. All Rights Reserved.
         </Typography>
