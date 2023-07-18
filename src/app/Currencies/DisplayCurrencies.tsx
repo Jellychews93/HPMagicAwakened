@@ -25,7 +25,7 @@ function DisplayCurrencies({ currency }: DisplayCurrenciesProps) {
             <Image width={300} height={300}
               src={item.src.src}
               alt={item.name}
-              style={{ width: '100%', height: '50vh', objectFit: 'cover', objectPosition: 'top' }}
+              style={{ width: '100%', height: '50vh', objectFit: 'cover', objectPosition: 'top left' }}
             />
             <Typography variant='h5' sx={{ mt: '3vh' }}>{item.description}</Typography>
           </Grid>
