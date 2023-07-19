@@ -30,7 +30,7 @@ export default function Footer() {
             <ul>
               <li><a href="/ForbiddenForestSolo" style={{ color: '#dddddd' }}>Solo</a></li>
               <li><a href="/ForbiddenForestHauntedHallow" style={{ color: '#dddddd' }}>Haunted Hallow</a></li>
-              <li><a href="/ForbiddenForestHauntedHallow" style={{ color: '#dddddd' }}>Deathly Dell</a></li>
+              <li><a href="ForbiddenForestDeathlyDell" style={{ color: '#dddddd' }}>Deathly Dell</a></li>
             </ul>
           </Box>
         </Grid>

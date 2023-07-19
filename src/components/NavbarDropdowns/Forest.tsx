@@ -65,8 +65,7 @@ function Forest() {
               Haunted Hallow
             </a>
             <a
-              href="ForbiddenForestHauntedHallow"
-              // href="ForbiddenForestDeathlyDell"
+              href="ForbiddenForestDeathlyDell"
               className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               style={{ color: '#0d0604' }}
               role="menuitem"
