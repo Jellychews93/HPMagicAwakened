@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 import { theme } from '../../components/Theme';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-function page() {
+function Page() {
   const isMobile = useMediaQuery('(max-width:768px)');
   const imageSize = isMobile ? '300' : '400'
 
@@ -78,5 +78,5 @@ function page() {
   )
 }
 
-export default page
+export default Page
 
