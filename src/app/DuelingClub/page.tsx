@@ -1,6 +1,6 @@
 'use client'
 import Navbar from '@/components/Navbar'
-import { Box, Grid, Paper, Typography, useMediaQuery } from '@mui/material';
+import { Box, Grid, Paper, Typography } from '@mui/material';
 import React from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Image from 'next/image';
@@ -9,7 +9,7 @@ import Ranking from '../../../public/assets/Duel/Ranking.jpg'
 import Selection from '../../../public/assets/Duel/Selection.jpg'
 import Footer from '@/components/Footer';
 import { theme } from '../../components/Theme';
-
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function page() {
   const isMobile = useMediaQuery('(max-width:768px)');
