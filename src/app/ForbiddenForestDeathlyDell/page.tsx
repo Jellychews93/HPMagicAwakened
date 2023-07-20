@@ -43,7 +43,7 @@ function Page() {
         Deathly Dell Guide by Shirru
       </Typography>
       <Typography variant='h4' sx={{ textAlign: 'center', mx: '5vw', mb: '3vh' }}>
-        Awesome guide by <span style={{ textDecoration: 'underline' }}>Shirru</span >!
+        Awesome guide by <a href='https://ko-fi.com/shirru#avatarModal' style={{ textDecoration: 'underline' }}>Shirru</a >!
       </Typography>
       <Grid container>
         {images.map((item, index) => (

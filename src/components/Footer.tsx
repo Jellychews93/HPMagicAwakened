@@ -16,6 +16,7 @@ export default function Footer() {
           <Box sx={{ my: '1vh' }}>
             <ul>
               <li><a href="/DuelingClub" style={{ color: '#dddddd' }}>Dueling Club</a></li>
+              <li><a href="/DeckBuildingGuide" style={{ color: '#dddddd' }}>Deck Building</a></li>
               <li><a href="/Counters" style={{ color: '#dddddd' }}>Counters</a></li>
               <li><a href="/1v1" style={{ color: '#dddddd' }}>1v1</a></li>
               <li><a href="/2v2" style={{ color: '#dddddd' }}>2v2</a></li>

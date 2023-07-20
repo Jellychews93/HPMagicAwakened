@@ -57,6 +57,14 @@ function Dueling() {
               Dueling Club
             </a>
             <a
+              href="DeckBuildingGuide"
+              className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
+              style={{ color: '#0d0604' }}
+              role="menuitem"
+            >
+              Deck Building
+            </a>
+            <a
               href="Counters"
               className="block text-center px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               style={{ color: '#0d0604' }}
