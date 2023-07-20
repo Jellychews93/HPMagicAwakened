@@ -56,7 +56,7 @@ export default function Harry() {
         After you have cast 8 cards, she will summon a single Piertotum Locomotor statue.<br />
         Ideally, you wait until 9 or 10 mana, put down Prof. McGonagall, and spam all your spells in quick succession. You can hide/protect her with Nebulus, prolonging her presence on the field and creating pressure through the slow effect/summon statue.<br />
         -----<br />
-        While Luna Lovegood companion is on the field, every time you cast a spell, she will summon a random creature of corresponding cost -1. For example, cast a 3 mana spell, she will summon a random 2-cost creature for you. After accumulating a total of 20 mana, she will summon a Thestral, which deals high damage in a small area. Again, protect her with Nebulus and spam your spells after waiting for 10 or 9 mana. She will summon a swarm of creatures for you, and if the enemy doesn't kill her quickly, will summon a hard-hitting thestral.<br />
+        While Luna Lovegood companion is on the field, every time you cast a spell, she will summon a random creature of corresponding cost -1. For example, cast a 3 mana spell, she will summon a random 2-cost creature for you. After accumulating a total of 20 mana, she will summon a Thestral, which deals high damage in a small area. Again, protect her with Nebulus and spam your spells after waiting for 10 or 9 mana. She will summon a swarm of creatures for you, and if the enemy doesn&apos;t kill her quickly, will summon a hard-hitting thestral.<br />
         But for now....<br />
         In global, we suggest using Lottie, Ron, Hagrid.<br />
         Replace Lottie with Grawp or Frey Twins, or Cassandra.<br />

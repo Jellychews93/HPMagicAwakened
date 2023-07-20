@@ -86,7 +86,7 @@ function Page() {
         </Typography>
         <Typography variant='h5'>
           I am a player of the Taiwanese server, which first came out in 2021 autumn, and I joined HPMA in 2022 January; I then &apos;quit&apos; HPMA in 2022 July, and now I came back 2023 June after a full year of hiatus.
-          The information within this guide will not perfectly match the current state of global server nor the current state of taiwan server (since I am literally one year behind the others). But seeing as no one seems willing to share, this is all you're getting. Besides, knowledge is knowledge anyway.
+          The information within this guide will not perfectly match the current state of global server nor the current state of taiwan server (since I am literally one year behind the others). But seeing as no one seems willing to share, this is all you&apos;re getting. Besides, knowledge is knowledge anyway.
         </Typography>
         <Typography variant='h4' sx={{ mt: '3vh' }}>
           The aim of this guide:
@@ -110,15 +110,15 @@ function Page() {
           Reading your effects (cards and echoes)
         </Typography>
         <Typography variant='h5'>
-          The reason Harry and Hermione want to stick to spells, is because Harry's spell that are 3 mana and less will get damage/healing buff, and Hermione will boost the most expensive spell in her hand after using three other spells. Their echo effect do not benefit from the addition of creature cards at all. Which is why to maximize their echo effect, less creatures is always better for them.<br />
-          On the other side of the spectrum, Newt's echo effect will generate a 1 mana cost creature after playing three creature cards. Again, to maximize his effect, less spell is better.<br />
+          The reason Harry and Hermione want to stick to spells, is because Harry&apos;s spell that are 3 mana and less will get damage/healing buff, and Hermione will boost the most expensive spell in her hand after using three other spells. Their echo effect do not benefit from the addition of creature cards at all. Which is why to maximize their echo effect, less creatures is always better for them.<br />
+          On the other side of the spectrum, Newt&apos;s echo effect will generate a 1 mana cost creature after playing three creature cards. Again, to maximize his effect, less spell is better.<br />
           While the other echoes are still dependent on specific cards and will lean more heavily towards more spells or more creatures, the final result will generally be a mixed deck. Like Neville or Hagrid, their main focus will be one or two creatures, but will include supportive spells. And Snape or Bella, who prefer spells but will bring creatures of specific functions for support.
         </Typography>
         <Typography variant='h4' sx={{ mt: '3vh' }}>
           Picking your cards:
         </Typography>
         <Typography variant='h5'>
-          While it is possible to separate cards into categories like 'support' or 'damage dealing', etc. For the purpose of DECK BUILDING, I propose an alternative sorting system that will make it slightly easier to pick your cards.<br />
+          While it is possible to separate cards into categories like &apos;support&apos; or &apos;damage dealing&apos;, etc. For the purpose of DECK BUILDING, I propose an alternative sorting system that will make it slightly easier to pick your cards.<br />
           Your Main Focus/Central Card<br />
           The One (or Two) card that will be central to your strategy.<br />
           Your complimentary cards/support<br />
@@ -130,7 +130,7 @@ function Page() {
           Picking your Echo Bonuses
         </Typography>
         <Typography variant='h5'>
-          The mentality for echo bonus is usually "It's got ONE bonus that I really like. It will have to do." and not bother trying to optimize echo bonuses too much until you get to a really high level. You need to farm gold echoes and spend lots of coins, even then you won't always get bonuses you like.
+          The mentality for echo bonus is usually &quot;	It&apos;s got ONE bonus that I really like. It will have to do.&quot;	 and not bother trying to optimize echo bonuses too much until you get to a really high level. You need to farm gold echoes and spend lots of coins, even then you won&apos;t always get bonuses you like.
         </Typography>
         <Box sx={{ width: '100%' }}>
           <Box sx={{
