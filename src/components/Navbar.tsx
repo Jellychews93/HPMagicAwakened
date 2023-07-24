@@ -14,6 +14,7 @@ import Shop from './NavbarDropdowns/Shop';
 import SchoolLife from './NavbarDropdowns/SchoolLife';
 import Image from 'next/image';
 import Dueling from './NavbarDropdowns/Dueling';
+import HelpfulResources from './NavbarDropdowns/HelpfulResources';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -58,13 +59,7 @@ const Navbar = () => {
                   <Shop />
                 </div>
                 <div className='mx-3'>
-                  <a
-                    href='/FAQ'
-                    className="flex text-sm rounded-m focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                    style={{ color: '#EDC865' }}
-                  >
-                    FAQ
-                  </a>
+                  <HelpfulResources />
                 </div>
               </div>
             </div>
@@ -83,13 +78,7 @@ const Navbar = () => {
                   <Shop />
                 </div>
                 <div className='mx-3'>
-                  <a
-                    href='/FAQ'
-                    className="flex text-sm rounded-m focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                    style={{ color: '#EDC865' }}
-                  >
-                    FAQ
-                  </a>
+                  <HelpfulResources />
                 </div>
               </div>
             </div>

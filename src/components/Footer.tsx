@@ -9,7 +9,7 @@ export default function Footer() {
     <Box>
       <Grid container spacing={1} sx={{ backgroundColor: 'primary.main', px: '5vw', textAlign: 'center', mt: '5vh' }}>
         <Grid item xs={12} md={1} />
-        <Grid item xs={12} md={2}>
+        <Grid item xs={12} md={2} sx={{ my: isMobile ? '0.5vh' : '2vh' }}>
           <Typography variant='h4'>
             Dueling
           </Typography>
@@ -23,7 +23,7 @@ export default function Footer() {
             </ul>
           </Box>
         </Grid>
-        <Grid item xs={12} md={2}>
+        <Grid item xs={12} md={2} sx={{ my: isMobile ? '0.5vh' : '2vh' }}>
           <Typography variant='h4'>
             Forbidden Forest
           </Typography>
@@ -35,7 +35,7 @@ export default function Footer() {
             </ul>
           </Box>
         </Grid>
-        <Grid item xs={12} md={2}>
+        <Grid item xs={12} md={2} sx={{ my: isMobile ? '0.5vh' : '2vh' }}>
           <Typography variant='h4'>
             School Life
           </Typography>
@@ -49,7 +49,7 @@ export default function Footer() {
             </ul>
           </Box>
         </Grid>
-        <Grid item xs={12} md={2}>
+        <Grid item xs={12} md={2} sx={{ my: isMobile ? '0.5vh' : '2vh' }}>
           <Typography variant='h4'>
             Shop
           </Typography>
@@ -60,14 +60,20 @@ export default function Footer() {
             </ul>
           </Box>
         </Grid>
-        <Grid item xs={12} md={2}>
+        <Grid item xs={12} md={2} sx={{ my: isMobile ? '0.5vh' : '2vh' }}>
           <Typography variant='h4'>
-            <a href="/FAQ">FAQ</a>
+            Helpful Resources
           </Typography>
+          <Box sx={{ my: '1vh' }}>
+            <ul>
+              <li><a style={{ color: '#dddddd' }} href="/FAQ">FAQ</a></li>
+              <li><a style={{ color: '#dddddd' }} href="https://www.awakeneddecks.com/">Deck Database</a></li>
+              <li><a style={{ color: '#dddddd' }} href="https://awakened-db.com/">HPMA Database</a></li>
+            </ul>
+          </Box>
         </Grid>
-
       </Grid>
-      <Box sx={{ backgroundColor: '#EDC865', minHeight: '3vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap' }}>
+      <Box sx={{ backgroundColor: '#EDC865', minHeight: '3vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap', }}>
         <Typography variant='body1' sx={{ color: '#0d0604' }}>
           ©2023 Jellychews. All Rights Reserved.
         </Typography>

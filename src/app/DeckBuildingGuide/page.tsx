@@ -26,6 +26,13 @@ import Harry from './Decks/Harry';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Hermione from './Decks/Hermione';
+import Newt from './Decks/Newt';
+import Snape from './Decks/Snape';
+import Neville from './Decks/Neville';
+import Bellatrix from './Decks/Bellatrix';
+import Dobby from './Decks/Dobby';
+import Hagrid from './Decks/Hagrid';
+import Twins from './Decks/Twins';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -166,10 +173,12 @@ function Page() {
               <Tab label="Harry" {...a11yProps(0)} />
               <Tab label="Hermione" {...a11yProps(1)} />
               <Tab label="Newt" {...a11yProps(2)} />
-              <Tab label="Item Four" {...a11yProps(3)} />
-              <Tab label="Item Five" {...a11yProps(4)} />
-              <Tab label="Item Six" {...a11yProps(5)} />
-              <Tab label="Item Seven" {...a11yProps(6)} />
+              <Tab label="Snape" {...a11yProps(3)} />
+              <Tab label="Neville" {...a11yProps(4)} />
+              <Tab label="Bellatrix" {...a11yProps(5)} />
+              <Tab label="Dobby" {...a11yProps(6)} />
+              <Tab label="Hagrid" {...a11yProps(7)} />
+              <Tab label="Twins" {...a11yProps(8)} />
             </Tabs>
             <TabPanel value={value} index={0}>
               <Harry />
@@ -178,19 +187,25 @@ function Page() {
               <Hermione />
             </TabPanel>
             <TabPanel value={value} index={2}>
-              Coming Soon Three
+              <Newt />
             </TabPanel>
             <TabPanel value={value} index={3}>
-              Coming Soon Four
+              <Snape />
             </TabPanel>
             <TabPanel value={value} index={4}>
-              Coming Soon Five
+              <Neville />
             </TabPanel>
             <TabPanel value={value} index={5}>
-              Coming Soon Six
+              <Bellatrix />
             </TabPanel>
             <TabPanel value={value} index={6}>
-              Coming Soon Seven
+              <Dobby />
+            </TabPanel>
+            <TabPanel value={value} index={7}>
+              <Hagrid />
+            </TabPanel>
+            <TabPanel value={value} index={8}>
+              <Twins />
             </TabPanel>
           </Box >
         </Box>

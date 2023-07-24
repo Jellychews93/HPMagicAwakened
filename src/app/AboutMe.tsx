@@ -1,41 +1,14 @@
 'use client'
-import profile from '../../public/assets/aboutMe/Profile.png'
-import React from 'react';
-import { Box, Grid, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { Grid, Typography } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import Image from 'next/image';
 
 const AboutMe = () => {
-  const theme = useTheme();
   const isMobile = useMediaQuery('(max-width:768px)');
 
   return (
-    <Grid container alignItems="center" spacing={2} sx={{ mt: 5 }}>
-      <Grid item xs={2} sx={{}} />
-      <Grid item xs={isMobile ? 12 : 4} sx={{}}> {/* Updated xs value */}
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            mb: isMobile ? 2 : 0, // Added margin bottom for spacing on mobile
-          }}
-        >
-          <Image
-            src={profile.src}
-            alt="Profile Picture"
-            width={300}
-            height={300}
-            style={{
-              border: '2px solid #000',
-              borderRadius: '25%',
-              width: '75%',
-              marginInline: 'auto',
-            }}
-          />
-        </Box>
-      </Grid>
-      <Grid item xs={isMobile ? 12 : 4} sx={{ mx: '2vw' }}>
+    <Grid container spacing={2} sx={{ mt: 5, textAlign: 'center' }}>
+      <Grid item xs={12} md={1} />
+      <Grid item xs={12} md={5} sx={{ mx: isMobile ? '5vw' : '2vw', px: '5vw' }}>
         <Typography variant="h3" sx={{ textAlign: 'center' }}>
           Hi! I&apos;m Jellychews
         </Typography>
@@ -49,12 +22,23 @@ const AboutMe = () => {
           Copyright: If I&apos;ve used any content or assets that you&apos;d prefer I didn&apos;t and/or haven&apos;t given any proper citations, please let me know and I will take it down immediately.
           Jellychews93@gmail.com
           <br />
-          If you&apos;re interested in contributing as a developer or have content you have to add or edit, feel free to email me as well. I could 
+          If you&apos;re interested in contributing as a developer or have content you have to add or edit, feel free to email me as well. I could
           definitely use the help!
         </Typography>
       </Grid>
-      <Grid item xs={2} sx={{}} />
-    </Grid>
+      <Grid item xs={12} md={5} sx={{ mx: '2vw', mt: isMobile ? '3vh' : '' }}>
+        <Typography variant="h3" sx={{ textAlign: 'center' }}>
+          Contributors
+        </Typography>
+        <Typography variant="h4" sx={{ textAlign: 'center', mt: '1vh' }}>
+          Jellychews<br />
+          nickthemanz<br />
+          Shirru<br />
+          QQInfinity<br />
+        </Typography>
+      </Grid>
+      <Grid item xs={12} md={1} />
+    </Grid >
   );
 };
 

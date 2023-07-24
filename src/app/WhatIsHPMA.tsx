@@ -14,18 +14,17 @@ const WhatIsHPMA = () => {
     <Grid container alignItems="center" spacing={2} sx={{ mt: '5vh' }}>
       <Grid item xs={1} />
       <Grid item xs={10} sx={{}}>
-        <Typography variant='h1' sx={{ textAlign: 'center', mb: '3vh' }}>
+        <Typography variant='h2' sx={{ textAlign: 'center', mb: '3vh' }}>
           What Is Harry Potter Magic Awakened?
         </Typography>
         <Image src={HPMA.src} alt="HPMA Photo"
-        width={300} height={300}
+          width={600} height={600}
           style={{
-            width: '50vw',
             marginInline: 'auto',
             border: '2px solid #000',
             borderRadius: '25%',
           }} />
-        <Typography variant='h5'>
+        <Typography variant='h5' sx={{ mt: '5vh' }}>
           From the HPMA Official Website:
         </Typography>
         <Typography variant='h5'>
