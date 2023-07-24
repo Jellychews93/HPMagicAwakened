@@ -13,7 +13,7 @@ export default function Newt() {
       <Typography variant='h5'>
         Technically, as long as your newt deck is filled with creatures, it will have a decent chance to work out fine. However we will dig into the finer points of what makes a good newt deck.<br />
         Newt excells in the &apos;zerg rush&apos; strategy, where the aim is to fill the field so full of creatures that enemy has no heads or tails on what to kill first, and every attempt at kiting the creatures just means getting attacked every step of the way from different angles. Hence, slow creatures or creatures with high cost are not recommended to be included into newt decks. (Looking at all of you Opal Eye, Piertotum Locomotor, Dragon Egg and Fiendfyres....)<br />
-        Although "Fast" is the keyword here, Newt could use some immobile creatures to great effect too. Like Firework Box, Acromantula Nest or Whomping Willow. But these are counter measures for going against creature decks. Their value diminishes greatly when up against spell decks. Which is why we will not include them in our sample build.<br />
+        Although &quot;Fast&quot; is the keyword here, Newt could use some immobile creatures to great effect too. Like Firework Box, Acromantula Nest or Whomping Willow. But these are counter measures for going against creature decks. Their value diminishes greatly when up against spell decks. Which is why we will not include them in our sample build.<br />
         I will provide you with the sample build of Ashwinder Newt
         <br /><br />
         ⭐Central Cards:<br />
